@@ -1,0 +1,6 @@
+<h1>Home#page_a</h1>
+<p>Find me in app/views/home/page_a.html.erb</p>
+
+<%= turbo_frame_tag "page_a" do %>
+  <%= link_to "Page B", home_page_b_path, data: { turbo_stream: true } %>
+<% end %>
